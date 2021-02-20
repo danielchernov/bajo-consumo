@@ -1,2 +1,1 @@
-# bajo-consumo
 Bajo Consumo
