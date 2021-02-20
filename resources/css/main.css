@@ -116,6 +116,16 @@ body {
   }
 }
 
+@keyframes moveInRotated {
+  0% {
+    transform: scale(-1, -1) rotate(30deg) translateY(200px);
+  }
+
+  100% {
+    transform: scale(-1, -1) rotate(30deg) translateY(0);
+  }
+}
+
 /* .paragraph-box {
   position: absolute;
   bottom: 30%;
@@ -186,4 +196,24 @@ body {
 .nav-bar ul li a:hover,
 .nav-bar ul li a:active {
   transform: scale(-1, -1) rotate(30deg) translateY(-20px);
+}
+
+.nav-btn-1 {
+  animation: moveInRotated 2s ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+.nav-btn-2 {
+  animation: moveInRotated 2s ease-out 2.5s;
+  animation-fill-mode: backwards;
+}
+
+.nav-btn-3 {
+  animation: moveInRotated 2s ease-out 3s;
+  animation-fill-mode: backwards;
+}
+
+.nav-btn-4 {
+  animation: moveInRotated 2s ease-out 3.5s;
+  animation-fill-mode: backwards;
 }
