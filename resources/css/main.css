@@ -133,3 +133,57 @@ body {
   animation: moveInBottom 3s ease-out 3s;
   animation-fill-mode: backwards;
 } */
+
+.nav-bar {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  top: -50px;
+  right: 10%;
+}
+
+.nav-bar ul {
+  width: 100%;
+  height: 100%;
+
+  list-style: none;
+  writing-mode: vertical-lr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  backface-visibility: hidden;
+}
+
+.nav-bar ul li {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar ul li a:link,
+.nav-bar ul li a:visited {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199, 63, 253, 0.075);
+  border: 1px solid rgb(199, 63, 253);
+  box-shadow: -3px -3px 0 rgba(64, 170, 212, 0.87);
+  transform: scale(-1, -1) rotate(30deg);
+  border-top-right-radius: 100px;
+  text-decoration: none;
+  color: rgb(76, 188, 233);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px 0;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a:active {
+  transform: scale(-1, -1) rotate(30deg) translateY(-20px);
+}
