@@ -25,11 +25,15 @@ body {
 
 .header {
   height: 100vh;
+  width: 100%;
   background-image: linear-gradient(
-    to right bottom,
-    rgb(6, 1, 8),
-    rgb(12, 3, 17)
-  );
+      to right bottom,
+      rgba(6, 1, 8, 0.98),
+      rgba(12, 3, 17, 0.98)
+    ),
+    url("https://images.freeimages.com/images/large-previews/f27/glowing-street-1508173.jpg");
+  background-size: cover;
+  background-position: bottom;
   position: relative;
 }
 
@@ -57,10 +61,6 @@ body {
 
   animation: moveInLeft 1s ease-out 0.5s;
   animation-fill-mode: backwards;
-  /* 
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  */
 }
 
 .heading-primary-sub {
@@ -116,7 +116,7 @@ body {
   }
 }
 
-.paragraph-box {
+/* .paragraph-box {
   position: absolute;
   bottom: 30%;
   right: 20%;
@@ -132,4 +132,4 @@ body {
 
   animation: moveInBottom 3s ease-out 3s;
   animation-fill-mode: backwards;
-}
+} */
