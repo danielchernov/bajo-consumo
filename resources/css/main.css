@@ -8,16 +8,16 @@
   box-sizing: border-box;
 }
 
-html {
-  color: #f046bd;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.7;
-  color: #777;
+  color: #f046bd;
+}
+
+section {
+  padding: 30px;
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -111,24 +111,23 @@ h2 {
   position: relative;
 }
 
-.header-backgroud-img {
+.header-background-img {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
       to right bottom,
-      rgba(6, 1, 8, 0.98),
-      rgba(12, 3, 17, 0.98)
+      rgba(6, 1, 8, 0.95),
+      rgba(12, 3, 17, 0.95)
     ),
-    url("https://images.freeimages.com/images/large-previews/f27/glowing-street-1508173.jpg");
+    url("../img/IMG-20210222-WA0012.jpg");
   background-size: cover;
-  background-position: bottom;
   position: fixed;
   z-index: -1;
 }
 
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -172,7 +171,7 @@ h2 {
   height: 180px;
   position: fixed;
   top: -50px;
-  right: 10%;
+  right: 20%;
   z-index: 999;
 }
 
@@ -194,6 +193,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px;
 }
 
 .nav-bar ul li a:link,
@@ -317,4 +317,40 @@ h2 {
   );
 
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+}
+
+.section-rock3 {
+  width: 100%;
+  height: 800px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* CONTACT */
+/* ------------------------------------------------------------------------------------------ */
+
+.section-form {
+  width: 100%;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(8, 61, 82),
+    rgb(110, 2, 124)
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------------------------------------------ */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #440055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
