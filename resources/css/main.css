@@ -16,10 +16,6 @@ body {
   color: #f046bd;
 }
 
-section {
-  padding: 30px;
-}
-
 /* ------------------------------------------------------------------------------------------ */
 /* ELEMENTS */
 /* ------------------------------------------------------------------------------------------ */
@@ -193,14 +189,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px;
+  margin: 0 15px;
 }
 
 .nav-bar ul li a:link,
 .nav-bar ul li a:visited {
   width: 100%;
   height: 100%;
-  background-color: rgba(199, 63, 253, 0.2);
+  background-color: rgba(37, 0, 51, 0.7);
   border: 1px solid rgb(199, 63, 253);
   box-shadow: -3px -3px 0 rgba(64, 170, 212, 0.87);
   transform: scale(-1, -1) rotate(30deg);
@@ -249,16 +245,24 @@ h2 {
 /* ABOUT */
 /* ------------------------------------------------------------------------------------------ */
 
+.bla {
+  /* filter: drop-shadow(0 0 20px rgba(129, 219, 255, 0.815)); */
+  filter: drop-shadow(0 1px 0 rgb(142, 223, 255))
+    drop-shadow(0 -1px 0 rgb(142, 223, 255))
+    drop-shadow(0 0 8px rgba(129, 219, 255, 0.815));
+  z-index: -1;
+}
+
 .section-about {
   width: 100%;
-  height: 1050px;
+  height: 800px;
 
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
 
   background-image: linear-gradient(
     to right top,
-    rgb(8, 61, 82),
-    rgb(110, 2, 124)
+    rgb(6, 26, 36),
+    rgb(28, 6, 32)
   );
   position: relative;
   display: flex;
@@ -267,31 +271,29 @@ h2 {
 }
 
 .about-background-img {
-  position: absolute;
-  width: 70%;
-  height: 70%;
+  height: 100%;
   background-image: linear-gradient(
       to right bottom,
-      rgba(102, 33, 129, 0.836),
-      rgba(32, 6, 46, 0.664)
+      rgba(23, 11, 27, 0.5),
+      rgba(23, 10, 31, 0.5)
     ),
-    url("https://cdn.pixabay.com/photo/2015/06/16/16/48/guitar-811343_960_720.jpg");
+    url("../img/IMG-20210222-WA0017.jpg");
   background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(
-    100% 100%,
-    100% 35%,
-    50% 100%,
-    38% 25%,
-    100% 0,
-    0 82%,
-    24% 0
-  );
+  background-position: center;
+
+  flex: 1;
 }
 
 .about__text-box {
-  width: 60%;
-  z-index: 1;
+  width: 66%;
+  height: 100%;
+  padding: 50px;
+  /* box-shadow: -1px 0 20px rgba(129, 219, 255, 0.815);
+  border-left: 1px solid rgb(142, 223, 255); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about__text {
