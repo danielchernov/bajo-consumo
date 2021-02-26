@@ -101,73 +101,82 @@
         </div>
       </div>
     </section>
-    <section class="section-rock"></section>
-    <section class="section-rock2"></section>
-    <section class="section-rock3"></section>
-    <section class="section-form">
-      <div>
-        <h2>Contact</h2>
+
+    <section class="contact">
+      <div class="contact__main--wrap">
+        <div class="contact__main">
+          <div class="contact__info">
+            <div class="contact__info--title">
+              <h2>Contact</h2>
+            </div>
+          </div>
+          <div class="contact__form--wrap">
+            <div class="contact__form">
+              <form method="post" action="#">
+                <div>
+                  <div>
+                    <label for="name">Name</label>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Your name..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="email">Email</label>
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Your email..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="news">Newsletter?</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="news" id="news" checked /> Yes,
+                    please!
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="message">Drop us a line</label>
+                  </div>
+                  <div>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Your message..."
+                    ></textarea>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label>&nbsp; </label>
+                  </div>
+                  <div>
+                    <input type="submit" value="Send it!" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <form method="post" action="#" class="contact-form">
-          <div>
-            <div>
-              <label for="name">Name</label>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your name..."
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <div>
-              <label for="email">Email</label>
-            </div>
-            <div>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email..."
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <div>
-              <label for="news">Newsletter?</label>
-            </div>
-            <div>
-              <input type="checkbox" name="news" id="news" checked /> Yes,
-              please!
-            </div>
-          </div>
-          <div>
-            <div>
-              <label for="message">Drop us a line</label>
-            </div>
-            <div>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-          </div>
-          <div>
-            <div>
-              <label>&nbsp; </label>
-            </div>
-            <div>
-              <input type="submit" value="Send it!" />
-            </div>
-          </div>
-        </form>
+      <div class="contact__background--wrap">
+        <div class="contact__background"></div>
       </div>
     </section>
     <footer class="footer">
