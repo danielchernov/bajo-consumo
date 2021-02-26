@@ -38,7 +38,7 @@ h2 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 9rem;
 }
 
 h2 {
@@ -109,12 +109,9 @@ h2 {
 
 .header {
   height: 90vh;
-  width: 100%;
-
-  position: relative;
 }
 
-.header-background-img {
+.header__background-img {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
@@ -128,37 +125,35 @@ h2 {
   z-index: -1;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 30%;
+  left: 10%;
 }
 
 .heading-primary {
   backface-visibility: hidden;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
 
   animation: moveInLeft 2s ease-out 1s;
   animation-fill-mode: backwards;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
 
   animation: moveInBottom 2s ease-out 1.5s;
   animation-fill-mode: backwards;
-  margin-left: 40%;
+  margin-left: 20%;
 }
 
-.header-audio {
+.header__audio {
   width: 30rem;
   position: absolute;
-  bottom: 3rem;
+  bottom: 8rem;
   right: 3rem;
 
   animation: moveInBottom 3s ease-out 4s;
@@ -182,25 +177,20 @@ h2 {
   width: 100%;
   height: 100%;
 
-  list-style: none;
   writing-mode: vertical-lr;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .nav-bar__list {
   flex: 0 0 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 1.5rem;
 }
 
 .nav-bar__btn:link,
 .nav-bar__btn:visited {
   width: 100%;
-  height: 100%;
+  padding-bottom: 3rem;
   background-color: rgba(16, 0, 22, 0.7);
   border: 0.2rem solid rgb(212, 105, 255);
   border-left: 0.1rem solid rgb(96, 218, 255);
@@ -214,7 +204,6 @@ h2 {
 
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
   font-weight: 400;
 
   display: flex;
@@ -231,22 +220,22 @@ h2 {
   border-left: 0.3rem solid rgb(118, 223, 255);
 }
 
-.nav-btn-1 {
+.nav-bar__btn--1 {
   animation: moveInRotated 2s ease-out 2s;
   animation-fill-mode: backwards;
 }
 
-.nav-btn-2 {
+.nav-bar__btn--2 {
   animation: moveInRotated 2s ease-out 2.5s;
   animation-fill-mode: backwards;
 }
 
-.nav-btn-3 {
+.nav-bar__btn--3 {
   animation: moveInRotated 2s ease-out 3s;
   animation-fill-mode: backwards;
 }
 
-.nav-btn-4 {
+.nav-bar__btn--4 {
   animation: moveInRotated 2s ease-out 3.5s;
   animation-fill-mode: backwards;
 }
@@ -255,22 +244,16 @@ h2 {
 /* ABOUT */
 /* ------------------------------------------------------------------------------------------ */
 
-.section-about {
-  width: 100%;
+.about {
   height: 80rem;
 
-  /* clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%); */
-
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.about__slideshow-wrap {
+.about__slideshow--wrap {
   height: 96%;
   flex: 1;
-  z-index: 0;
 
   filter: drop-shadow(0 0.2rem 0 rgb(229, 124, 255))
     drop-shadow(0 -0.2rem 0 rgb(229, 124, 255))
@@ -288,52 +271,40 @@ h2 {
   align-items: center;
   justify-content: space-between;
 
-  /* clip-path: polygon(0 0, 100% 4%, 100% 93%, 0% 89%); */
   clip-path: polygon(0 0, 100% 4%, 100% 92%, 0% 88%);
-  z-index: 1;
 }
 
 .chevron-arrow {
   width: 5rem;
-  filter: drop-shadow(0 0 10px rgba(129, 219, 255, 0.8));
+  filter: drop-shadow(0 0 1rem rgba(129, 219, 255, 0.8));
 }
 
-.chevron-arrow--left {
-  margin-left: 5rem;
-}
+/* .chevron--left:link,
+.chevron--left:visited,
+.chevron--right:link,
+.chevron--right:visited {
+} */
 
-.chevron-arrow--right {
-  margin-right: 5rem;
-}
-
-.chevron-left:link,
-.chevron-left:visited,
-.chevron-right:link,
-.chevron-right:visited {
-}
-
-.chevron-left:hover,
-.chevron-left:active,
-.chevron-right:hover,
-.chevron-right:active {
+.chevron--left:hover,
+.chevron--left:active,
+.chevron--right:hover,
+.chevron--right:active {
   cursor: pointer;
+  filter: drop-shadow(0 0 1rem rgba(255, 90, 247, 0.8));
 }
 
-.about__text-box-wrap {
+.about__text-box--wrap {
   width: 66.6%;
   height: 100%;
   filter: drop-shadow(0 0.2rem 0 rgb(142, 223, 255))
     drop-shadow(0 -0.2rem 0 rgb(142, 223, 255))
     drop-shadow(-0.2rem 0 0 rgb(142, 223, 255))
     drop-shadow(0 0 1rem rgba(129, 219, 255, 0.8));
-  z-index: 1;
 }
 
 .about__text-box {
   height: 100%;
   padding: 5rem;
-  /* box-shadow: -1px 0 20px rgba(129, 219, 255, 0.815);
-  border-left: 1px solid rgb(142, 223, 255); */
 
   background-image: linear-gradient(
     to right top,
@@ -345,12 +316,11 @@ h2 {
   flex-direction: column;
   justify-content: center;
 
-  /* clip-path: polygon(0 5%, 1% 4%, 100% 12%, 100% 100%, 1% 93%, 0% 92%); */
   clip-path: polygon(0 4.5%, 0.5% 4%, 100% 12%, 100% 100%, 0.5% 92%, 0% 91.5%);
 }
 
 .about__text {
-  margin: 3rem 0 0 3rem;
+  margin: 4rem 0 0 4rem;
 }
 
 /* ------------------------------------------------------------------------------------------ */
